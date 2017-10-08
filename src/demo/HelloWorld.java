@@ -29,6 +29,16 @@ public class HelloWorld {
 		String message = driver.findElement(By.id("conf_message")).getText();
 		System.out.println("CONFIRMATION" + message);
 
+		String pageTitle =  driver.getTitle();
+		System.out.println(pageTitle);
+
+		if(pageTitle == " SDET Training | Account Management"){
+			System.out.println("Page Title test pass");
+		}
+		//close browser
+
+		driver.close();
+
 	}
 
 }
