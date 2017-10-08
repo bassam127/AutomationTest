@@ -26,6 +26,9 @@ public class HelloWorld {
 		WebElement login = driver.findElement(By.name(LOGIN));
 		login.click();
 
+		String message = driver.findElement(By.id("conf_message")).getText();
+		System.out.println("CONFIRMATION" + message);
+
 	}
 
 }
